@@ -24,8 +24,6 @@ void swap(Point* xp, Point* yp)
 
 class Polynom {
 public:
-	int x;
-	int y;
 	int n;
 	int color;
 	vector<Point> points;
@@ -59,7 +57,7 @@ public:
 	}
 
 	void sortByX() {
-		bool swapped;
+		bool isSwapped;
 		for (int i = 0; i < n - 1; i++)
 		{
 			swapped = false;
@@ -78,7 +76,7 @@ public:
 		}
 	}
 	void sortByY() {
-		bool swapped;
+		bool isSwapped;
 		for (int i = 0; i < n - 1; i++)
 		{
 			swapped = false;
